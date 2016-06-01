@@ -398,21 +398,60 @@ var x = 10; //Global, all functions can access it
 console.log(x); //Logs 10
 
 //Switch statements - The better if statement (in certain cases)
+var workDays = ["Mon", "Tue"];
+var currentDay = "Mon";
+switch(currentDay) {
+	case 'Mon':
+		alert("Time to make some money!");
+		break;
+	case 'Tue':
+		alert("Time to make some money!");
+		break;
+	default:
+		alert("Time to get some sleep!");
+}
+//Will display the alert "Time to make some money!". Be sure to ALWAYS include a break
+//under each case besides the default case. default: is the same as else {} in 
+//an if statement.
+/*This switch statment is the same as writing:
+	var workDays = ["Mon", "Tue"];
+	var currentDay = "Mon";
+	if (currentDay == "Mon") {
+		alert("Time to make some money!");
+	} else if (currentDay == "Tue") {
+		alert("Time to make some money!");
+	} else {
+		alert("Time to get some sleep!");
+	}
+*/
 
+//While Loops
+var answer;
+while (answer != 4) {
+	answer = prompt("What's 2+2?");
+}
 
+console.log("You'll only get here if you answer correctly.");
+//While loops are good for user validation. The program will not proceed until 4 is
+//inputted. English translation: While the answer does not equal 4, ask What's 2+2? and
+//store it in answer.
 
+//Do-While Loops
+do {
+	var answer = prompt("What's 2+2?");
+} while (answer != 4);
 
+console.log("You'll only get here if you answer correctly");
+//Do-While loops are good when you want the code to run at least once regardless of 
+//any previously values / conditions.
 
+/*Include JavaScript directly in an HTML file
+<script>
+function helloWorld() {
+	alert("Hello world");
+}
+</script>*/
+//Can be placed any where (for the most part) in an HTML file
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*Include JavaScript in an HTML file using a separate JS file
+<script src="script.js"></script>*/

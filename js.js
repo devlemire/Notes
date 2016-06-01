@@ -365,6 +365,39 @@ now.setMilliseconds(0);
 // - - - - ALL DATE NOTES ARE RELATIVE TO THE TIME THEY WERE TAKEN - - - - //
 // - - - -         Tue May 31 2016 19:26:57 GMT-0400 (EDT)         - - - - //
 
+//Functions
+function addTwoNumbers(num1, num2) {
+	return num1 + num2;
+}
+
+alert("The sum of 2 + 2 is: " + addTwoNumbers(2, 2));
+alert("The sum of 3 + 3 is: " + addTwoNumbers(3, 3));
+/*Use a function any where you would use the same lines of code multiple times
+Otherwise you would have to write:
+	var sum;
+	sum = 2+2;
+	alert("The sum of 2 + 2 is: " + sum);
+	sum = 3+3;
+	alert("The sum of 3 + 3 is: " + sum);
+Obviously not the best example, but functions can save lots of time in certain scenarios
+
+num1 and num2 are referred to as the parameters
+addTwoNumbers(2, 2) 2 and 2 are the arguments that are passed to the parameters
+addTwoNumbers(3, 3) 3 and 3 are the arguments that are passed to the parameters*/
+
+//Local vs Global Variables
+function notMain() {
+	var x = 3;		//Local, only notMain can access it, unless you return its value
+	console.log(x);
+}
+
+console.log(x); //x was never declared in the main code, so it is undefined
+
+var x = 10; //Global, all functions can access it
+
+console.log(x); //Logs 10
+
+//Switch statements - The better if statement (in certain cases)
 
 
 

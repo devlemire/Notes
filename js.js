@@ -445,13 +445,4 @@ console.log("You'll only get here if you answer correctly");
 //Do-While loops are good when you want the code to run at least once regardless of 
 //any previously values / conditions.
 
-/*Include JavaScript directly in an HTML file
-<script>
-function helloWorld() {
-	alert("Hello world");
-}
-</script>*/
-//Can be placed any where (for the most part) in an HTML file
-
-/*Include JavaScript in an HTML file using a separate JS file
-<script src="script.js"></script>*/
+//Objects

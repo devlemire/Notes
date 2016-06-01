@@ -478,6 +478,148 @@ if ("age" in person) {
 //The key must be in quotation marks and all lower case. The object must be spelt the
 //same as when it was declared and not in quotation marks
 
+//Methods
+var person = {
+	firstName: "Bob",
+	lastName: "Joe",
+	age: 19,
+	greeting: function() {
+		console.log("Hello there, " + this.firstName + " " + this.lastName + ".");
+	}
+}
+
+var person2 = {
+	firstName: "Sally",
+	lastName: "Jones",
+	age: 20,
+	greeting: function() {
+		console.log("Hello there, " + this.firstName + " " + this.lastName + ".");
+	}
+}
+
+person.greeting();
+person2.greeting();
+//person -> "Hello there, Bob Joe."
+//person2 -> "Hello there, Sally Jones."
+
+//Constructors
+function Person(firstName, lastName, age, phoneNumber) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.age = age;
+	this.phoneNumber = phoneNumber;
+}
+
+var bobJoe = new Person("Bob", "Joe", 19, "3869313452");
+/*firstName = "Bob"
+lastName = "Joe"
+age = 19
+phoneNumber = "3869313452"*/
+
+//Constructor Methods
+function Person(firstName, lastName) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.greeting = function() {
+		console.log("Hello there, " + this.firstName + " " + this.lastName + ".");
+	}
+}
+
+var sallyJones = new Person("Sally", "Jones");
+sallyJones.greeting();
+//"Hello there, Sally Jones."
+
+//Prototypes - Functions
+function Person(firstName, lastName) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+}
+
+Person.prototype.greeting = function() {
+	console.log("Hello there, " + this.firstName + " " + this.lastName + ".");
+}
+
+var bobJoe = new Person("Bob", "Joe");
+var sallyJones = new Person("Sally", "Jones");
+bobJoe.greeting();
+sallyJones.greeting();
+//bobJoe = "Hello there, Bob Joe."
+//sallyJones =  "Hello there, Sally Jones."
+
+//Prototypes - Properties
+function Person(firstName, lastName) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+}
+
+Person.prototype.species = "human";
+
+var bobJoe = new Person("Bob", "Joe");
+var sallyJones = new Person("Sally", "Jones");
+
+console.log(bobJoe.species);
+console.log(sallyJones.species);
+//Both are equal to "human"
+
+//Check for properties
+function Person(firstName, lastName) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+}
+
+var askingForAge = "age" in Person;
+//false
+
+//List all properties of an object
+var propertyList = [];
+
+function Person(firstName, lastName) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+}
+
+Person.prototype.species = "human";
+
+var bobJoe = new Person("Bob", "Joe");
+
+for (var i in bobJoe) {
+	propertyList.push(i);
+	console.log(i);
+}
+/*Log:
+firstName
+lastName
+species
+*/
+//propertyList = [ "firstName" , "lastName", "species" ];
+
+//List properties only in the original definition. No prototype properties.
+var propertyList = [];
+
+function Person(firstName, lastName) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+}
+
+Person.prototype.species = "human";
+
+var bobJoe = new Person("Bob", "Joe");
+
+for (var i in bobJoe) {
+	if (bobJoe.hasOwnProperty(i)) {
+		propertyList.push(i);
+		console.log(i);
+	}
+}
+/*Log:
+firstName
+lastName
+*/
+//propertyList = [ "firstName" , "lastName" ];
+
+
+
+
 
 
 

@@ -250,9 +250,120 @@ var num = 10023;
 num = num.toString();
 //num = "10023" not 10023
 
+//Control the length of decimals
+var price = 10.789;
+price = price.toFixed(2);
+alert("$" + price);
+//price = 10.78
 
+//Remove decimal
+var total = 10.023525235;
+total = total.toFixed();
+//total = 10;
 
+// - - - - ALL DATE NOTES ARE RELATIVE TO THE TIME THEY WERE TAKEN - - - - //
+// - - - -         Tue May 31 2016 19:26:57 GMT-0400 (EDT)         - - - - //
 
+//Get current date and time
+var now = new Date();
+//copys the blue prints of the Date() object and allows you to use them
+var dateString = now.toString();
+//dateString = "Tue May 31 2016 19:26:57 GMT-0400 (EDT)"
+
+//Get the current day
+var now = new Date();
+var theDay = now.getDay();
+//getDay() gives 0 - 6 with 0 being Sunday and 6 being Saturday
+
+//How to use the current day
+var now = new Date();
+var theDay = now.getDay();  //theDay = 2;
+var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+theDay = days[theDay];			//theDay = "Tue";
+//Create an array to correlate with the numbers getDay() gives you
+
+//Get the current month
+var now = new Date();
+var theMonth = now.getMonth();
+//getMonth() gives 0 - 11 with 0 being January and 11 being December
+
+//How to use the current month
+var now = new Date();
+var theMonth = now.getMonth()
+var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Nov", "Dec"];
+theMonth = months[theMonth];
+//Create an array to correlate with the numbers getMonth() gives you
+
+//Get the current day of the month
+var now = new Date();
+var date = now.getDate();
+//getDate() gives 1 - 31
+
+//Get the current year
+var now = new Date();
+var year = now.getYear();
+
+//Get the current hour
+var now = new Date();
+var hour = now.getHours();
+//0 is midnight, 12 is noon, 23 is 11 PM
+
+//How to use the current hour
+var now = new Date();
+var hour = now.getHours();
+var hourConversion = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+if (hour < 12) {
+	hour = hourConversion[hour] + " AM";
+} else if (hour > 12) {
+	hour = hourConversion[hour] + " PM";
+}
+//Create an array to correlate with the numbers getHours() gives you and then use
+//if statements to determine AM or PM and convert to a string
+
+//Get the current minute
+var now = new Date();
+var minute = now.getMinutes();
+
+//Get the current second
+var now = new Date();
+var second = now.getSeconds();
+
+//Get the current millisecond
+var now = new Date();
+var millisecond = now.getMilliseconds();
+
+//Get the number of Milliseconds since midnight, Jan. 1, 1970
+var now = new Date();
+var compareTime = now.getTime();
+//compareTime = 1464739271988
+
+//How to compare time using two specific dates
+var now = new Date();
+var millisecondsToday = now.getTime();
+var leaveForUtah = new Date("June 23, 2016");
+var millisecondsUtah = leaveForUtah.getTime();
+
+var millisecondsDifference = millisecondsUtah - millisecondsToday;
+
+var dayDifference = Math.floor(millisecondsDifference / (1000 * 60 * 60 * 24));
+/*1000 miliseconds = 1 second * 60 = 1 minute * 60 = 1 hour * 24 = 1 day that is why
+you divide by 1000 * 60 * 60 * 24. You round down to get the full number of days
+not a decimal number of days
+dayDifference = 22*/
+
+//How to change elements of a Date object
+var now = new Date();
+now.setFullYear(2020);
+now.setMonth(7); //June
+now.setDate(13); //13th
+now.setHours(11); //11am
+now.setMinutes(30); //30 minutes
+now.setSeconds(0);
+now.setMilliseconds(0);
+
+// - - - - ALL DATE NOTES ARE RELATIVE TO THE TIME THEY WERE TAKEN - - - - //
+// - - - -         Tue May 31 2016 19:26:57 GMT-0400 (EDT)         - - - - //
 
 
 

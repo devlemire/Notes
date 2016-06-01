@@ -30,7 +30,7 @@ function playerChoice() {
 function computerChoice() {
 	var choice = Math.floor(Math.random() * 3 + 1);  //Generates a number, 1 - 3 (rock = 1, paper = 2, scissors = 3)
 	console.log("Computer Choice: " + selection[choice - 1] + ".");  //Log information to the user using the selection array
-	return choice;  ////Return the numeric choice value to the global variable computer
+	return choice;  //Return the numeric choice value to the global variable computer
 }
 
 function compare(player, computer) {  //Use the two numbers (player & computer) to determine a winner through switch statements

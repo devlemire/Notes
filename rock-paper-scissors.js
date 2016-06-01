@@ -19,7 +19,7 @@ function playerChoice() {
         		choice = 3;  //"scissors" is the same as 3 ("scissors" = 3)
         		break;
         	default:
-        		choice = parseInt(choice);  //If the user doesn't enter rock, paper, or scissors, default to converting their answer to an integer.
+        		choice = parseInt(choice);  //If the user doesn't enter rock, paper, or scissors, default to converting their answer to an integer
         }
     } while (choice !== 1 && choice !== 2 && choice !== 3);  //Continue to ask for choice if choice does not equal 1, 2, or 3
   

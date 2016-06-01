@@ -446,3 +446,53 @@ console.log("You'll only get here if you answer correctly");
 //any previously values / conditions.
 
 //Objects
+var person = {
+	firstName: "Bob",
+	lastName: "Joe",
+	age: 19
+};
+//Notice how keys do not end in semi-colons but in commas. Also person ends in a
+//semi-colon because it is being assigned the keys. Think of it as var person = {};
+//Usually when something is being assigned a value you end that line in a semi-colon
+
+//Delete object keys
+var person = {
+	firstName: "Bob",
+	lastName: "Joe",
+	age: 19
+};
+
+delete person.age;
+//The object person no longer has the key of age
+
+//Check for keys in an Object
+var person = {
+	firstName: "Bob",
+	lastName: "Joe",
+	age: 19
+};
+
+if ("age" in person) {
+	console.log(person.age);
+}
+//The key must be in quotation marks and all lower case. The object must be spelt the
+//same as when it was declared and not in quotation marks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

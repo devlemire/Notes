@@ -1,7 +1,7 @@
 //JavaScript Notes
 
 //Display a message
-alert("Hello world"); 
+alert("Hello world");
 //Creates a pop-up dialog for the user with the message "Hello World"
 
 //Declare a variable
@@ -76,7 +76,7 @@ if (age == 19 && weight == 190) {
 //Declare an array
 var myArray = [];
 var cities = ["city1", "city2", "city3"];
-//cities[0] = "city1"; 
+//cities[0] = "city1";
 //cities[1] = "city2";
 //cities[2] = "city3";
 
@@ -115,7 +115,7 @@ cities.splice(0, 1);
 //Copy parts of an array into a new array
 var cities = ["city1", "city2", "city3"];
 var mustVisit = cities.slice(1, 3);
-//slice - first digit is the element to start at, 
+//slice - first digit is the element to start at,
 //second digit is the element number AFTER the last element you want to copy
 //mustVisit = ["city2", "city3"];
 
@@ -183,7 +183,7 @@ text = text.slice(0, firstChar - 1) + text.slice(firstChar + 6);
 every bit of the string until you reach the first letter - 1. It's the first letter
 minus one because you want to include the first letter of the string you're trying to
 delete. Then to add on the rest of the sentence, you slice at the end of the word you
-are deleteing and don't include an end point, that will automatically copy the rest of 
+are deleteing and don't include an end point, that will automatically copy the rest of
 the string.*/
 
 //Finding a specific character in a string
@@ -227,7 +227,7 @@ var randomNum = Math.random();
 
 //Generate a number between a range of your choosing
 var randomNum = Math.floor(Math.random() * 10 + 1);
-//The why isn't that important. 
+//The why isn't that important.
 //What you multiply by is your biggest number. In this example the largest # is 10
 
 //Convert string to integer
@@ -411,7 +411,7 @@ switch(currentDay) {
 		alert("Time to get some sleep!");
 }
 //Will display the alert "Time to make some money!". Be sure to ALWAYS include a break
-//under each case besides the default case. default: is the same as else {} in 
+//under each case besides the default case. default: is the same as else {} in
 //an if statement.
 /*This switch statment is the same as writing:
 	var workDays = ["Mon", "Tue"];
@@ -442,7 +442,7 @@ do {
 } while (answer != 4);
 
 console.log("You'll only get here if you answer correctly");
-//Do-While loops are good when you want the code to run at least once regardless of 
+//Do-While loops are good when you want the code to run at least once regardless of
 //any previously values / conditions.
 
 //Objects
@@ -499,8 +499,8 @@ var person2 = {
 
 person.greeting();
 person2.greeting();
-//person -> "Hello there, Bob Joe."
-//person2 -> "Hello there, Sally Jones."
+//person.greeting() = "Hello there, Bob Joe."
+//person2.greeting() = "Hello there, Sally Jones."
 
 //Constructors
 function Person(firstName, lastName, age, phoneNumber) {

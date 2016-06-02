@@ -472,11 +472,11 @@ var person = {
 	age: 19
 };
 
-if ("age" in person) {
+if ("lastName" in person) {
 	console.log(person.age);
 }
-//The key must be in quotation marks and all lower case. The object must be spelt the
-//same as when it was declared and not in quotation marks
+//The key must be in quotation marks and spelt exactly using the same casing.
+//The object must be spelt the same as when it was declared and not in quotation marks
 
 //Methods
 var person = {

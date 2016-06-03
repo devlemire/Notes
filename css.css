@@ -1,15 +1,8 @@
-html, body {
-	display: inline-block;
-}
+/*CSS Notes
 
-.container {
-	background-color: #cccccc;
-	border: 2px solid black;
-	border-radius: 5px;
+Change color of text*/
+p {
+	color: blue;
 }
-
-.headings {
-	color: red;
-}
-
-/*CSS notes*/
+/*Any paragraph elements on your page will have the text color blue. p can be changed with any other selector regarding text.
+For example h1 or h2.*/

@@ -9,8 +9,7 @@ var myVar;
 myVar = 1;
 myVar = "string";
 myVar = true;
-//JavaScript has dynamic variables, that can hold values ranging from numbers, strings,
-//and booleans.
+//JavaScript has dynamic variables, that can hold values ranging from numbers, strings, and booleans.
 
 //Increase a variable by one - shorthand
 var num = 1;
@@ -29,8 +28,10 @@ alert("Hello, " + name + ".");
 
 //Ask for user input
 var userInput = prompt("What is your name?", "Ex: John Smith");
-//An alert will display with a textbox. The textbox will default to "Ex: John Smith"
-//What the user enters is then stored in userInput
+/*
+An alert will display with a textbox. The textbox will default to "Ex: John Smith". What the user enters is then stored in
+userInput
+*/
 
 //If statements
 var num = 1;
@@ -60,9 +61,11 @@ if (age == 19) {
 } else {
 	alert("You are old.");
 }
-//If age is equal to 19, it will display "We are the same age."
-//If age is less than 19, it will display "You are young."
-//If age is anything else, it will display "You are old."
+/*
+If age is equal to 19, it will display "We are the same age."
+If age is less than 19, it will display "You are young."
+If age is anything else, it will display "You are old."
+*/
 
 //Testing multiple conditions
 var age = 19;
@@ -70,15 +73,16 @@ var weight = 190;
 if (age == 19 && weight == 190) {
 	alert("You are the right weight for your age.");
 }
-//If age is 19 and weight is equal to 190 it will display
-//"You are the right weight for your age."
+//If age is 19 and weight is equal to 190 it will display: "You are the right weight for your age."
 
 //Declare an array
 var myArray = [];
 var cities = ["city1", "city2", "city3"];
-//cities[0] = "city1";
-//cities[1] = "city2";
-//cities[2] = "city3";
+/*
+cities[0] = "city1";
+cities[1] = "city2";
+cities[2] = "city3";
+*/
 
 //Remove the last element from an array
 var cities = ["city1", "city2", "city3"];
@@ -103,21 +107,26 @@ cities.unshift("city-1, city0");
 //Add any where in an array
 var cities = ["city1", "city2", "city3"];
 cities.splice(0, 0, "newCity");
-//splice - first digit is start index, second digit is number of elements
-//cities = ["newCity", "city1", "city2", "city3"];
+/*
+splice - first digit is start index, second digit is number of elements
+cities = ["newCity", "city1", "city2", "city3"];
+*/
 
 //Remove any where in an array
 var cities = ["city1", "city2", "city3"];
 cities.splice(0, 1);
-//splice - first digit is start index, second digit is number of elements
-//cities = ["city2", "city3"];
+/*
+splice - first digit is start index, second digit is number of elements
+cities = ["city2", "city3"];
+*/
 
 //Copy parts of an array into a new array
 var cities = ["city1", "city2", "city3"];
 var mustVisit = cities.slice(1, 3);
-//slice - first digit is the element to start at,
-//second digit is the element number AFTER the last element you want to copy
-//mustVisit = ["city2", "city3"];
+/*
+slice - first digit is the element to start at, second digit is the element number AFTER the last element you want to copy
+mustVisit = ["city2", "city3"];
+*/
 
 //For loops
 for (var i = 0; i < 5; i++) {
@@ -137,13 +146,15 @@ var colors = ["red", "blue", "green"];
 for (var i in colors) {
 	console.log(colors[i]);
 }
-/*Short hand for writing the following:
+/*
+Short hand for writing the following:
 	var colors = ["red", "blue", "green"];
 	for (var i = 0; i < colors.length; i++) {
 		console.log(colors[i]);
 	}
+
+Both will loop through all values of the colors array and print each value
 */
-//Both will loop through all values of the colors array and print each value
 
 //Stop a loop early - Flags
 var people = ["James", "Jarad", "Billy"];
@@ -157,8 +168,10 @@ for (var i in people) {
 if ( !(foundJarad) ) {
 	alert("Jarad was not found.");
 }
-//Will loop twice, find Jarad, and break the loop. Instead of looping 3 times.
-//You can break a loop early using flags and the break; command
+/*
+Will loop twice, find Jarad, and break the loop. Instead of looping 3 times.
+You can break a loop early using flags and the break; command
+*/
 
 //Change to lower case
 var string = "aBcDfgH";
@@ -178,21 +191,25 @@ text = text.slice(0, firstChar - 1) + text.slice(firstChar + 5);
 var text = "Remove ORANGE from this string.";
 var firstChar = text.indexOf("ORANGE");
 text = text.slice(0, firstChar - 1) + text.slice(firstChar + 6);
-//text = "Remove from this string."
-/*In order to copy the beginning of the sentence, you start with index 0 and copy
+/*
+text = "Remove from this string."
+In order to copy the beginning of the sentence, you start with index 0 and copy
 every bit of the string until you reach the first letter - 1. It's the first letter
 minus one because you want to include the first letter of the string you're trying to
 delete. Then to add on the rest of the sentence, you slice at the end of the word you
 are deleteing and don't include an end point, that will automatically copy the rest of
-the string.*/
+the string.
+*/
 
 //Finding a specific character in a string
 var text = "This is a sentence.";
 var firstChar = text.charAt(0);
 var lastChar = text.charAt(text.length - 1);
-//firstChar = "T";
-//lastChar = ".";
-//This can only display the character, it cannot be used to assign characters
+/*
+firstChar = "T";
+lastChar = ".";
+This can only display the character, it cannot be used to assign characters
+*/
 
 //Replace a segment in a string with another - EASY way
 var text = "This is a sentence.";
@@ -202,8 +219,10 @@ var newText = text.replace("This is a sentence.", "Hunter smells bad.");
 //Replace all instances of a segment in a string with another - EASY way
 var text = "This is a sentence. Blah blah blah. This is a sentence.";
 var newText = text.replace(/This is a sentence./g, "");
-//newText = " Blah blah blah. ";
-//Notice the reamining spaces
+/*
+newText = " Blah blah blah. ";
+Notice the reamining spaces
+*/
 
 //Round a number
 var num = 5.75;
@@ -222,13 +241,14 @@ num = Math.floor(num);
 
 //Generate a random number
 var randomNum = Math.random();
-//randomNum = any number between 0.0000000000000000 and 0.9999999999999999
-//16 decimal places
+//randomNum = any number between 0.0000000000000000 and 0.9999999999999999 (16 decimal places)
 
 //Generate a number between a range of your choosing
 var randomNum = Math.floor(Math.random() * 10 + 1);
-//The why isn't that important.
-//What you multiply by is your biggest number. In this example the largest # is 10
+/*
+The why isn't that important.
+What you multiply by is your biggest number. In this example the largest # is 10
+*/
 
 //Convert string to integer
 var string = "10";
@@ -318,8 +338,10 @@ if (hour < 12) {
 } else if (hour > 12) {
 	hour = hourConversion[hour] + " PM";
 }
-//Create an array to correlate with the numbers getHours() gives you and then use
-//if statements to determine AM or PM and convert to a string
+/*
+Create an array to correlate with the numbers getHours() gives you and then use if statements to determine AM or PM
+and convert to a string
+*/
 
 //Get the current minute
 var now = new Date();
@@ -347,10 +369,11 @@ var millisecondsUtah = leaveForUtah.getTime();
 var millisecondsDifference = millisecondsUtah - millisecondsToday;
 
 var dayDifference = Math.floor(millisecondsDifference / (1000 * 60 * 60 * 24));
-/*1000 miliseconds = 1 second * 60 = 1 minute * 60 = 1 hour * 24 = 1 day that is why
-you divide by 1000 * 60 * 60 * 24. You round down to get the full number of days
-not a decimal number of days
-dayDifference = 22*/
+/*
+1000 miliseconds = 1 second * 60 = 1 minute * 60 = 1 hour * 24 = 1 day that is why you divide by 1000 * 60 * 60 * 24.
+You round down to get the full number of days not a decimal number of days
+dayDifference = 22
+*/
 
 //How to change elements of a Date object
 var now = new Date();
@@ -372,7 +395,8 @@ function addTwoNumbers(num1, num2) {
 
 alert("The sum of 2 + 2 is: " + addTwoNumbers(2, 2));
 alert("The sum of 3 + 3 is: " + addTwoNumbers(3, 3));
-/*Use a function any where you would use the same lines of code multiple times
+/*
+Use a function any where you would use the same lines of code multiple times
 Otherwise you would have to write:
 	var sum;
 	sum = 2+2;
@@ -383,7 +407,8 @@ Obviously not the best example, but functions can save lots of time in certain s
 
 num1 and num2 are referred to as the parameters
 addTwoNumbers(2, 2) 2 and 2 are the arguments that are passed to the parameters
-addTwoNumbers(3, 3) 3 and 3 are the arguments that are passed to the parameters*/
+addTwoNumbers(3, 3) 3 and 3 are the arguments that are passed to the parameters
+*/
 
 //Local vs Global Variables
 function notMain() {
@@ -410,10 +435,10 @@ switch(currentDay) {
 	default:
 		alert("Time to get some sleep!");
 }
-//Will display the alert "Time to make some money!". Be sure to ALWAYS include a break
-//under each case besides the default case. default: is the same as else {} in
-//an if statement.
-/*This switch statment is the same as writing:
+/*
+Will display the alert "Time to make some money!". Be sure to ALWAYS include a breakvunder each case besides the default case.
+default: is the same as else {} in an if statement.
+This switch statment is the same as writing:
 	var workDays = ["Mon", "Tue"];
 	var currentDay = "Mon";
 	if (currentDay == "Mon") {
@@ -432,9 +457,10 @@ while (answer != 4) {
 }
 
 console.log("You'll only get here if you answer correctly.");
-//While loops are good for user validation. The program will not proceed until 4 is
-//inputted. English translation: While the answer does not equal 4, ask What's 2+2? and
-//store it in answer.
+/*
+While loops are good for user validation. The program will not proceed until 4 is inserted. English translation:
+"While the answer does not equal 4, ask What's 2+2? and store it in answer."
+*/
 
 //Do-While Loops
 do {
@@ -442,8 +468,7 @@ do {
 } while (answer != 4);
 
 console.log("You'll only get here if you answer correctly");
-//Do-While loops are good when you want the code to run at least once regardless of
-//any previously values / conditions.
+//Do-While loops are good when you want the code to run at least once regardless of any previously values / conditions.
 
 //Objects
 var person = {
@@ -451,9 +476,11 @@ var person = {
 	lastName: "Joe",
 	age: 19
 };
-//Notice how keys do not end in semi-colons but in commas. Also person ends in a
-//semi-colon because it is being assigned the keys. Think of it as var person = {};
-//Usually when something is being assigned a value you end that line in a semi-colon
+/*
+Notice how keys do not end in semi-colons but in commas. Also person ends in a semi-colon because it is being assigned the keys.
+Think of it as var person = {};
+Usually when something is being assigned a value you end that line in a semi-colon
+*/
 
 //Delete object keys
 var person = {
@@ -475,8 +502,10 @@ var person = {
 if ("lastName" in person) {
 	console.log(person.age);
 }
-//The key must be in quotation marks and spelt exactly using the same casing.
-//The object must be spelt the same as when it was declared and not in quotation marks
+/*
+The key must be in quotation marks and spelt exactly using the same casing.
+The object must be spelt the same as when it was declared and not in quotation marks
+*/
 
 //Methods
 var person = {
@@ -499,8 +528,10 @@ var person2 = {
 
 person.greeting();
 person2.greeting();
-//person.greeting() = "Hello there, Bob Joe."
-//person2.greeting() = "Hello there, Sally Jones."
+/*
+person.greeting() = "Hello there, Bob Joe."
+person2.greeting() = "Hello there, Sally Jones."
+*/
 
 //Constructors
 function Person(firstName, lastName, age, phoneNumber) {
@@ -511,10 +542,12 @@ function Person(firstName, lastName, age, phoneNumber) {
 }
 
 var bobJoe = new Person("Bob", "Joe", 19, "3869313452");
-/*firstName = "Bob"
+/*
+firstName = "Bob"
 lastName = "Joe"
 age = 19
-phoneNumber = "3869313452"*/
+phoneNumber = "3869313452"
+*/
 
 //Constructor Methods
 function Person(firstName, lastName) {
@@ -543,8 +576,10 @@ var bobJoe = new Person("Bob", "Joe");
 var sallyJones = new Person("Sally", "Jones");
 bobJoe.greeting();
 sallyJones.greeting();
-//bobJoe = "Hello there, Bob Joe."
-//sallyJones =  "Hello there, Sally Jones."
+/*
+bobJoe = "Hello there, Bob Joe."
+sallyJones =  "Hello there, Sally Jones."
+*/
 
 //Prototypes - Properties
 function Person(firstName, lastName) {
@@ -586,12 +621,14 @@ for (var i in bobJoe) {
 	propertyList.push(i);
 	console.log(i);
 }
-/*Log:
+/*
+Log:
 firstName
 lastName
 species
+
+propertyList = [ "firstName" , "lastName", "species" ];
 */
-//propertyList = [ "firstName" , "lastName", "species" ];
 
 //List properties only in the original definition. No prototype properties.
 var propertyList = [];
@@ -611,8 +648,10 @@ for (var i in bobJoe) {
 		console.log(i);
 	}
 }
-/*Log:
+/*
+Log:
 firstName
 lastName
+
+propertyList = [ "firstName" , "lastName" ];
 */
-//propertyList = [ "firstName" , "lastName" ];

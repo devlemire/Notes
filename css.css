@@ -6,3 +6,49 @@ p {
 }
 /*Any paragraph elements on your page will have the text color blue. p can be changed with any other selector regarding text.
 For example h1 or h2.*/
+
+/*Change font size of text*/
+p {
+	font-size: 10px;
+}
+/*Any paragraph elements on your page will be in the font-size of 10 pixels. p can be changed with any other selector regarding
+text. For example h1 or h2.*/
+
+/*Change the font family of text*/
+p {
+	font-family: cursive;
+}
+/*Any paragraph elements on your page will be in the font cursive. p can be changed with any other selector regarding text.
+For example h1 or h2.*/
+
+/*Create "back-up" fonts if user doesn't have the "primary" font (This is called degrading fonts)*/
+p {
+	font-family: cursive, fantasy, monospace;
+}
+/*Any paragraph elements on your page will be in the font cursive, if they have it, other wise it will be in fantasy, or if they
+do not have that, it will be in monospace. p can be changed with any other selector regarding text. For example h1 or h2.*/
+
+/*Control size of image(s)*/
+.profilePics {
+	width: 100px;
+	height: 50px;
+}
+/*Any image assigned the class of "profilePics" will be forced to have the width of 100 pixels and the height of 50 pixels.*/
+
+/*Add a border*/
+.profilePics {
+	border: 2px solid black;
+}
+/*Any image assigned the class of "profilePics" will be forced to have a 2 pixel solid black border.*/
+
+/*Add rounded borders*/
+.profilePics {
+	border-radius: 10px;
+}
+/*Any image assigned the class of "profilePics" will be forced to have rounded borders of a radius of 10 pixels*/
+
+/*Create circular images*/
+.profilePics {
+	border-radius: 50%;
+}
+/*Any image assigned the class of "profilePics" will be forced into a circle (Good for profile pictures)*/

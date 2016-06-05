@@ -45,10 +45,16 @@ do not have that, it will be in monospace. p can be changed with any other selec
 .profilePics {
 	border-radius: 10px;
 }
-/*Any image assigned the class of "profilePics" will be forced to have rounded borders of a radius of 10 pixels*/
+/*Any image assigned the class of "profilePics" will be forced to have rounded borders of a radius of 10 pixels.*/
 
 /*Create circular images*/
 .profilePics {
 	border-radius: 50%;
 }
-/*Any image assigned the class of "profilePics" will be forced into a circle (Good for profile pictures)*/
+/*Any image assigned the class of "profilePics" will be forced into a circle (Good for profile pictures).*/
+
+/*Change the background color of a div element*/
+.red-background {
+	background-color: red;
+}
+/*Any div's with the class of "red-background" will be forced to have a red background.

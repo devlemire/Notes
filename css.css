@@ -58,3 +58,61 @@ do not have that, it will be in monospace. p can be changed with any other selec
 	background-color: red;
 }
 /*Any div's with the class of "red-background" will be forced to have a red background.
+
+/*Style an element with an ID*/
+#my-id {
+	font-size: 20px;
+}
+/*The element assigned the id "my-id" will be forced to have the font size of 20 pixels.*/
+
+/*Adjust the padding*/
+#someElement {
+	padding: 20px;
+}
+/*
+Padding is the space between the element and its border.
+The element assigned the ID of "someElement" will a padding of 20 pixels assigned to it on all sides.
+*/
+
+/*Adjust the margin*/
+#someElement {
+	margin: 10px;
+}
+/*
+Margin is the amount of space between an element's border and its surrounding elements.
+The element assigned the ID of "someElement" will have a margin of 10 pixels assigned to it on all sides.
+*/
+
+/*Adjust the padding to specific sides*/
+#someElement {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*Adjust the margin to specific sides*/
+#someElement {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/*Adjust the padding through clockwise notation*/
+#someElement {
+	padding: 5px 10px 15px 20px
+}
+/*Top: 5 pixels, Right: 10 pixels, Bottom: 15 pixels, Left: 20 pixels.*/
+
+/*Adjust the margin through clockwise notation*/
+#someElement {
+	margin: 5px 10px 15px 20px;
+}
+/*Top: 5 pixels, Right: 10 pixels, Bottom: 15 pixels, Left: 20 pixels.*/
+
+/*Use important*/
+#someElement {
+	color: red !important;
+}
+/*The element assigned "someElement" will remain the color red no matter what*/

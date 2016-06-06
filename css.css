@@ -116,3 +116,15 @@ The element assigned the ID of "someElement" will have a margin of 10 pixels ass
 	color: red !important;
 }
 /*The element assigned "someElement" will remain the color red no matter what*/
+
+/*Use specific colors - Hex Code*/
+#someElement {
+	color: #000000;
+}
+/*Hex code for black*/
+
+/*Use specific colors - RGB*/
+#someElement {
+	color: rgb(0, 0, 0);
+}
+/*RGB for black*/

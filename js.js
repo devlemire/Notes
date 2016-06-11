@@ -331,12 +331,14 @@ var hour = now.getHours();
 //How to use the current hour
 var now = new Date();
 var hour = now.getHours();
-var hourConversion = [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+var hours = [NaN, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-if (hour < 12) {
-	hour = hourConversion[hour] + " AM";
-} else if (hour > 12) {
-	hour = hourConversion[hour] + " PM";
+if (hour == 24) {
+	hour = hours[hour] + " AM";
+} else if (hour >= 12) {
+	hour = hours[hour] + " PM";
+} else if (hour < 12) {
+	hour = hours[hour] + " AM";
 }
 /*
 Create an array to correlate with the numbers getHours() gives you and then use if statements to determine AM or PM

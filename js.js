@@ -657,3 +657,25 @@ lastName
 
 propertyList = [ "firstName" , "lastName" ];
 */
+
+//Test a string against an array.
+function findVowel(str) {
+  var vowels = ["a", "e", "i", "o", "u"];
+  str = str.toLowerCase().split('');
+  var counter = 0;
+
+  for(var i in str) {
+    if (vowels.indexOf(str[i]) !== -1) {
+      counter++;
+    }
+  }
+
+  return counter;
+}
+
+console.log(findVowel("abecidofu"));
+/*
+IndexOf returns -1 when it is not a part of the array. For example, passing b would return -1 in my vowels array.
+This is a cleaner way to test for multiple values instead of using a lot of || statements inside of your if.
+counter = 5
+*/

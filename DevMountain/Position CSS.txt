@@ -1,0 +1,16 @@
+Position CSS
+
+A positioned element is an element whose computed position is either relative, absolute, fixed, or sticky
+
+top, right, bottom, and left properties specify the position of positioned elements
+
+static - Let's the element use the normal behavior of being laid out in its current position in the flow
+relative - Adjusts the elements position without changing the layout of the page. Appears normally in the flow and then adjusts to
+           specified values (top, right, bottom, left)
+absolute - Does not take space in the flow and is positioned relative to the nearest positioned ancestor. Parent must have position set to relative
+fixed - Positioned relative to the container it is sitting in. Does not move when scrolling
+sticky - Positioning hybrid of relative and fixed positioning
+
+
+Absolute allows you to move an element relative to the container it is sitting in. Therefore to use absolute positioning, you must
+set the parent's container position to relative.

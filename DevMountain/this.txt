@@ -1,0 +1,20 @@
+Four rules for by which context is decided. In other words what 'this' points to. Determined at invocation.
+  Explicit
+  Implicit
+  Default/Window
+  New
+
+
+Order of how 'this' checks to see how it was assigned or 'pointed at'
+  Explicit
+  Implicit
+  Default/Window
+
+explicit assigning of 'this' This methods invoke functions and assign context
+  call      -       someFunction.call(thisContext, p1, p2, pN);
+  bind      -       var newFunction = someFunction.bind(thisContext);  //Parameters cannot be determined in this bind
+  apply     -       someFunction.apply(thisContext, [p1, p2, pN]);
+
+
+implicit assigning is 'left of the dot'
+  obj.doSomething();

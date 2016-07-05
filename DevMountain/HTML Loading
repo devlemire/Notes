@@ -1,0 +1,7 @@
+<script async src="script.js"></script>
+
+async prevents script blocking but doesn't follow the order of the js files
+
+<script defer src="script.js"></script>
+
+defer prevents script blocking and loads back the js in the order you told it to
